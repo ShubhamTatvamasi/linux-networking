@@ -35,6 +35,17 @@ arp # outside
 ip netns exec red arp # inside
 ```
 
+check route available outside and inside network namespace
+```bash
+route # outside
+ip netns exec red route # inside
+```
+---
+
+create a virtual network
+```bash
+
+```
 
 
 
