@@ -8,6 +8,11 @@ ip netns add red
 ip netns add blue
 ```
 
+check the namespaces
+```bash
+tree /var/run/netns/
+```
+
 open a shell inside network namespace
 ```bash
 ip netns exec red bash
@@ -58,6 +63,9 @@ assign IPs to namespaces
 ip -n red addr add 192.168.15.1 dev veth-red
 ip -n blue addr add 192.168.15.2 dev veth-blue
 ```
+
+ip netns exec netns1 ifconfig veth1 10.1.1.1/24 up
+
 
 start the network
 ```bash
