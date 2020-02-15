@@ -64,8 +64,11 @@ ip -n red addr add 192.168.15.1 dev veth-red
 ip -n blue addr add 192.168.15.2 dev veth-blue
 ```
 
-ip netns exec netns1 ifconfig veth1 10.1.1.1/24 up
-
+check the networkn ip
+```bash
+ip netns exec red ip address show
+ip netns exec blue ip address show
+```
 
 start the network
 ```bash
@@ -77,6 +80,4 @@ ping from red network to blue network
 ```bash
 ip netns exec red ping 192.168.15.2
 ```
-
-
 
