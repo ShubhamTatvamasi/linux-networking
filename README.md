@@ -1,5 +1,10 @@
 # linux-networking
 
+List all Open TCP sockets connections:
+```bash
+netstat -nplt
+```
+
 ### Network Namespace
 
 create two network namespaces `red` and `blue`
