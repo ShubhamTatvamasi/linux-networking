@@ -29,10 +29,10 @@ ip netns exec red ip link
 ip -n red link
 ```
 
-check arp table inside and outside network namespace
+check arp table outside and inside network namespace
 ```bash
-arp
-ip netns exec red arp
+arp # outside
+ip netns exec red arp # inside
 ```
 
 
