@@ -5,6 +5,11 @@ List all Open TCP sockets connections:
 netstat -nplt
 ```
 
+Check number of connections:
+```bash
+netstat -anp | grep etcd
+```
+
 ### Network Namespace
 
 create two network namespaces `red` and `blue`
