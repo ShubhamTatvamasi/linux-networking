@@ -1,5 +1,12 @@
 # linux-networking
 
+show ip
+```
+ip addr show ens3 | grep inet
+```
+
+### TCP sockets
+
 List all Open TCP sockets connections:
 ```bash
 netstat -nplt
