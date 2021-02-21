@@ -10,6 +10,11 @@ show routing system:
 ip route show
 ```
 
+Check all network devices status:
+```
+nmcli -p dev
+```
+
 ### TCP sockets
 
 List all Open TCP sockets connections:
