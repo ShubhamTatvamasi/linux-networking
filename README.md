@@ -5,6 +5,11 @@ show ip
 ip addr show ens3 | grep inet
 ```
 
+show routing system:
+```bash
+ip route show
+```
+
 ### TCP sockets
 
 List all Open TCP sockets connections:
