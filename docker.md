@@ -34,5 +34,10 @@ docker run --rm -it --network host nicolaka/netshoot sh
 docker run --rm -it --network none nicolaka/netshoot sh
 ```
 
+check iptables for all network:
+```bash
+sudo iptables -t nat -L -v
+```
+
 Source: https://github.com/nicolaka/netshoot
 
