@@ -7,5 +7,5 @@ sudo apt install bridge-utils
 
 create a bridge network:
 ```bash
-brctl addbr br0
+sudo brctl addbr br0
 ```
