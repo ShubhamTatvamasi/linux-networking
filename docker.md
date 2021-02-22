@@ -18,6 +18,8 @@ docker run -d --name netshoot nicolaka/netshoot sleep infinity
 NETSHOOT_PROCESS_ID=`docker inspect netshoot -f '{{.State.Pid}}'`
 sudo ps aux | grep $NETSHOOT_PROCESS_ID
 
+# check network interfaces inside docker container
+sudo nsenter -t $NETSHOOT_PROCESS_ID -n ip a
 ```
 
 
