@@ -15,7 +15,10 @@ add interface to bridge:
 sudo brctl addif br0 wlp0s20f3
 ```
 
-
+list all bridge networks:
+```bash
+brctl show
+```
 
 
 delete bridge network:
