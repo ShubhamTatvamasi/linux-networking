@@ -15,7 +15,7 @@ start a sleep container:
 docker run -d --name netshoot nicolaka/netshoot sleep infinity
 
 # get the process ID
-NETSHOOT_PROCESS_ID=`docker inspect iperf -f '{{.State.Pid}}'`
+NETSHOOT_PROCESS_ID=`docker inspect netshoot -f '{{.State.Pid}}'`
 sudo ps aux | grep $NETSHOOT_PROCESS_ID
 
 ```
