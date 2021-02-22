@@ -39,5 +39,9 @@ check iptables for all network:
 sudo iptables -t nat -L -v
 ```
 
+test on kubernetes:
+```bash
+kubectl run --rm -it --image=nicolaka/netshoot -- sh
+```
 Source: https://github.com/nicolaka/netshoot
 
