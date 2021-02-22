@@ -28,6 +28,11 @@ check namespace:
 sudo lsns --type net
 ```
 
+run docker container in `host` or `none` network:
+```bash
+docker run --rm -it --network host nicolaka/netshoot sh
+docker run --rm -it --network none nicolaka/netshoot sh
+```
 
 Source: https://github.com/nicolaka/netshoot
 
