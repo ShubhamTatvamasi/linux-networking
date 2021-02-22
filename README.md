@@ -1,8 +1,13 @@
 # linux-networking
 
 show ip
-```
+```bash
 ip addr show ens3 | grep inet
+```
+
+show IP routing table
+```bash
+route -n
 ```
 
 show routing system:
