@@ -20,6 +20,7 @@ sudo ps aux | grep $NETSHOOT_PROCESS_ID
 
 # check network interfaces inside docker container
 sudo nsenter -t $NETSHOOT_PROCESS_ID -n ip a
+sudo nsenter -t $NETSHOOT_PROCESS_ID -n ip route list
 ```
 
 
