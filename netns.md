@@ -55,3 +55,10 @@ try to ping from one network to other:
 ip netns exec red ping 192.168.1.3
 ip netns exec blue ping 192.168.1.2
 ```
+
+### Cleanup
+
+```bash
+ip netns delete red
+ip netns delete blue
+```
