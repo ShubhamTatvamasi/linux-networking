@@ -15,6 +15,10 @@ show routing system:
 ip route show
 ```
 
+add alternate name for a network interface:
+```bash
+ip link property add wlp0s20f3 altname eth0
+```
 Check all network devices status:
 ```
 nmcli -p dev
