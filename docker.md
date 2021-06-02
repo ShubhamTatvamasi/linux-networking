@@ -41,7 +41,8 @@ sudo iptables -t nat -L -v
 
 test on kubernetes:
 ```bash
-kubectl run --rm -it --image=nicolaka/netshoot -- sh
+kubectl run netshoot --image=nicolaka/netshoot -- sleep infinity
+kubectl exec -it netshoot -- sh
 ```
 Source: https://github.com/nicolaka/netshoot
 
