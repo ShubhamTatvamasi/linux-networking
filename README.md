@@ -1,5 +1,10 @@
 # linux-networking
 
+add default route for second interface on ec2 aws:
+```bash
+ip route add default via 172.31.16.1 dev eth1
+```
+
 show ip
 ```bash
 ip addr show ens3 | grep inet
